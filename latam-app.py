@@ -37,10 +37,10 @@ n_estado = st.selectbox(label = "Estado", options = list(mexico.subdivisiones.ke
 estado = mexico.subdivisiones[n_estado]
 st.write(estado.__dict__)
 
-""" 
+f""" 
 Cada `Subdivision` incluye por lo menos una `Ciudad`, su capital. 
 ```python
-latam.paises.MEX.subdivisiones['Baja California'].capital
+latam.paises.MEX.subdivisiones['{n_estado}'].capital
 ```
 """
 st.write(estado.capital)
