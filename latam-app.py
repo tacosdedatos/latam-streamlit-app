@@ -33,7 +33,7 @@ En algunos paises se le conoce como "estado", en otros como "provincia" o "distr
 
 Cada `Subdivision` tiene la siguiente información:
 """
-n_estado = st.selectbox(label = "Estado", options = mexico.subdivision.keys(), index = 2)
+n_estado = st.selectbox(label = "Estado", options = mexico.subdivisiones.keys(), index = 2)
 estado = mexico.subdivisiones["Baja California"]
 st.write(estado.__dict__)
 
