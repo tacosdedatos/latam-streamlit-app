@@ -33,8 +33,9 @@ En algunos paises se le conoce como "estado", en otros como "provincia" o "distr
 
 Cada `Subdivision` tiene la siguiente información:
 """
-baja_california = mexico.subdivisiones["Baja California"]
-st.write(baja_california.__dict__)
+n_estado = st.selectbox(label = "Estado", options = mexico.subdivision.keys(), index = 2)
+estado = mexico.subdivisiones["Baja California"]
+st.write(estado.__dict__)
 
 """ 
 Cada `Subdivision` incluye por lo menos una `Ciudad`, su capital. 
@@ -42,12 +43,12 @@ Cada `Subdivision` incluye por lo menos una `Ciudad`, su capital.
 latam.paises.MEX.subdivisiones['Baja California'].capital
 ```
 """
-st.write(baja_california.capital)
+st.write(estado.capital)
 
 """
 Cada `Ciudad` incluye la siguiente información:
 """
-st.write(baja_california.capital.__dict__)
+st.write(estado.capital.__dict__)
 
 """
 ***
